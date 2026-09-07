@@ -1,0 +1,126 @@
+// assignmnet1
+// Q1
+// let x = '123';
+// let y = 7;
+// console.log(Number(x) + y);
+//===============================
+//Q2
+// let x = 9;
+// if (x == 0 || x == '' || x == null || x == undefined || x == false){
+//     console.log('Invalid');
+// }
+//===============================
+//Q3
+// for(let i =0; i<= 10 ; i++){
+//     if(i %2==1){
+//         console.log(i);
+//     }
+// }
+//===============================
+//Q4
+// let arr = [1,2,3,4,5];
+// for(let i =0; i<arr.length ; i++){
+//     if(arr[i]%2==0){
+//         console.log(arr[i]);
+//     }
+// }
+//===============================
+//Q5
+
+// let arr1 = [1,2,3], arr2 = [4,5,6];
+// let arr3 = [...arr1,...arr2];
+// console.log(arr3);
+//===============================
+//Q6
+// let x= 4;
+// switch(x){
+//     case 1:
+//         console.log('sanday');
+//         break;
+//          case 2:
+//         console.log('monday');
+//         break;
+//          case 3:
+//         console.log('tusday');
+//         break;
+//          case 4:
+//         console.log('wunsday');
+//         break;
+//          case 5:
+//         console.log('thesday');
+//         break;
+//          case 6:
+//         console.log('frayday');
+//         break;
+//          case 7:
+//         console.log('satrday');
+//         break;
+// }
+//===============================
+//Q7
+// let arr = ['a','ab','abc'];
+// const countarr = arr.map(
+//     (count)=>{
+//         return count.length;
+//     }
+// );
+// console.log(countarr);
+
+//===============================
+//Q8
+// let x = 14;
+// if (x % 3 == 0 && x % 5== 0){
+//     console.log('Divisible by both');
+// } 
+//===============================
+//Q9
+// let squarenum = x => x * x;
+
+// console.log(squarenum(3)); 
+//===============================
+//Q10
+// let  x = {
+//     username : 'mohammed',
+//     age: 26,
+// };
+// let {username,age} = x ;
+// console.log(username ,'is', age ,'years old');
+//===============================
+//Q11
+// let sumfun= (...n)=>{
+//     let sum=0;
+//     for(let i=0; i<n.length ;i++){
+//         sum+=n[i];
+//     }
+// return sum;
+// }
+// console.log(sumfun(1,2,3,4,5))
+//===============================
+//Q12
+// متشرحتش
+
+//===============================
+//Q13 
+// let arr=[6,8,6,9,7];
+// let max = arr[0];
+// for (let i=1; i<arr.length; i++){
+//     if (max <= arr[i]){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+//===============================
+//Q14
+// let p={
+//     name: 'mohammed',
+//     age: 27,
+// }
+// let arrofkey = Object.keys(p);
+// console.log(arrofkey);
+//===============================
+//Q15
+// let arr= "the quick brown fox";
+// let sp =arr.split(" ");
+// console.log(sp);
+
+//===============================
