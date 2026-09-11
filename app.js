@@ -1,7 +1,39 @@
 //method of objact[keys,valus,assign]
-let arr1=[1,2,33,4,9,[6,9,8]]
-let arr2=JSON.stringify(arr1)
-arr2.push(7)
-arr2[5][0]=88;
-console.log(arr1)
-console.log(arr2)
+let exit = new Date();
+function  chackuserdata(){
+    console.log("start ch at",new Date() - exit)
+   setTimeout(
+    function(){
+       console.log('found user')
+         console.log("end ch at",new Date() - exit)
+    },
+    5000 
+   );
+}
+function senEmail(){
+     console.log("start se at",new Date() - exit)
+    setTimeout(
+        function(){
+      console.log('send email')
+        console.log("end se at",new Date() - exit)
+        },3000
+    );
+}    
+
+function updatUser(){
+     console.log("start up at",new Date() - exit)
+    setTimeout(
+        function(){
+      console.log('updat user')
+        console.log("end up at",new Date() - exit)
+        },1500
+    );
+}    
+
+
+chackuserdata()
+senEmail()
+updatUser(
+    
+)
+let x=9;
