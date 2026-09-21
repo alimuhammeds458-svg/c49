@@ -1,0 +1,168 @@
+//assignment2
+//Q1    
+// console.log(__filename)
+// console.log(__dirname)
+//==================================
+//Q2
+// const path = require('node:path')
+// let x='./user/data/ss78/fname';
+// let name= path.basename(x)
+// console.log(name);
+//==================================
+//Q3
+// const path = require('node:path')
+// let object={
+//    dir:"/folder",
+//    name:"app",
+//    ext:".js",
+// }
+// const r=path.format(object);
+// console.log(r)
+
+//==================================
+//Q4
+// const path = require('node:path')
+// const x= '/folder/app/ext.js';
+// let r=path.extname(x);
+// console.log(r);
+
+//==================================
+//Q5 
+//  const path = require('node:path')
+//  const x= '/folder/app/main.js';
+//  let base=path.basename(x)
+//  let ext=path.extname(x);
+// let d= base.split('.')
+// let r =d[0];
+//  let ruselt={
+//     Name: r,
+//     EXT:ext,
+//  }
+//  console.log(ruselt)
+
+//==================================
+//Q6
+//  const path = require('node:path')
+// const x= '/folder/app/main.js';
+// console.log(path.isAbsolute(x))
+
+//==================================
+//Q7
+// const path = require('node:path')
+// let x = 'src'
+// let y ='components'
+// let z= 'App.js'
+// const ruselt = path.join(x,y,z);
+// console.log(ruselt)
+
+//==================================
+//Q8
+// const path = require('node:path')
+//  const x= './index.js';
+//  let ruselt = path.resolve(x)
+//  console.log(ruselt);
+
+//==================================
+//Q9
+//  const path = require('node:path')
+// let x = '/folder1'
+// let y ='folder2/file.txt'
+// const ruselt = path.join(x,y);
+// console.log(ruselt)
+
+//==================================
+//Q10
+//  const fs = require('node:fs')
+// let x = '/path/to/file.txt'
+// fs.unlink(x,
+//     function(error){
+//         if(error){
+//             console.log(error)
+//         }
+//         else{
+//             console.log('the file.txt is deleted');
+            
+//         }
+
+//     }
+// )
+
+
+//==================================
+//Q11
+// const fs = require('node:fs')
+// let x ='node.js'
+// fs.mkdirSync(x);
+// console.log('success');
+
+//==================================
+//Q12
+// const event=require('node:events');
+// const emiter=new event();
+// emiter.on('start', 
+//     function(){
+//         console.log('Welcome event triggerted');
+        
+//     }
+// );
+
+// emiter.emit('start');
+
+//==================================
+//Q13
+// const event=require('node:events');
+// const emiter=new event();
+// emiter.on('login', 
+//     function(username){
+//         console.log("user logged in:", username);
+        
+//     }
+// );
+
+// emiter.emit('login','mohmmed');
+
+//==================================
+//Q14
+//  const fs = require('node:fs')
+// const ruselt= fs.readFileSync('./app.js');
+// console.log(ruselt.toString())
+
+//==================================
+//Q15
+// const fs = require('node:fs')
+//  fs.writeFile('./app.js', 'Async save',
+//     function(error){
+        
+//     }
+//  );
+
+//==================================
+//Q16
+// const fs = require('node:fs')
+//  console.log(fs.existsSync('./app.js'));
+
+//==================================
+//Q17
+// const os = require('node:os');
+// let x = os.platform()
+// let y =os.arch()
+// console.log(x);
+// console.log(y);
+
+//==================================
+//Q18
+//  const fs = require('node:fs')
+//  let st = fs.createReadStream('./app.js')
+//  st.on('data',
+//     function(chunc){
+//     console.log(chunc);
+    
+//     }
+//  )
+
+//==================================
+//Q19
+//  const fs = require('node:fs')
+// let x = fs.createReadStream('./app.js')
+// let y = fs.createWriteStream('./appjs.js')
+// x.pipe(y)
